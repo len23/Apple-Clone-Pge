@@ -1,0 +1,40 @@
+:root {
+  --large-font-size: 30px;
+  --main-font-size: 16px;
+  --normal-font-size:14px;
+  --small-font-size:12px;
+}
+
+html {
+  font-family:  Helvetica, Arial, sans-serif;
+  font-size: var(--main-font-size);
+}
+
+body {
+  height: 100vh;
+  max-width: 1366px;
+  margin:0 auto;
+  background-color: #fff;
+}
+
+/* HEADER */
+.header-section {
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
+    background-size: 100% 127vh;
+    background-position: center bottom;
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hs-group {
+  width: 100%;
+  text-align: center;
+  font-size: var(--large-font-size);
+  color: #fff
+}
+
+.hs-group * + * {
+  margin-top: 4%;
+}
