@@ -15,11 +15,14 @@ html {
   height: 100vh;
   max-width: 1366px;
   margin: 0 auto;
-  background-color: #fff;
 }
 
 .flex-inline {
   display: flex;
+}
+
+.white-color {
+  color: #fff;
 }
 
 /* HEADER */
@@ -35,7 +38,7 @@ html {
   background-repeat: no-repeat;
 }
 
-/* NAV BAR*/
+/* NAV BAR */
 .nav {
   position: absolute;
   top: 82px;
@@ -51,13 +54,14 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: linear-gradient(
-    to bottom,
-    hsl(0, 0%, 45%) 30%,
-    hsl(0, 0%, 43%) 49%,
-    hsl(0, 0%, 35%) 50%,
-    hsl(0, 0%, 45%) 90%
-  );
+  background:
+    linear-gradient(
+      to bottom,
+      hsl(0, 0%, 45%) 30%,
+      hsl(0, 0%, 43%) 49%,
+      hsl(0, 0%, 35%) 50%,
+      hsl(0, 0%, 45%) 90%
+    );
 }
 
 .nav-item {
@@ -66,9 +70,17 @@ html {
 }
 
 .nav-item a {
-  color: #fff;
   font-size: var(--small-font-size);
   font-weight: 700;
+}
+
+.hs-group * + * {
+  margin-top: 35px;
+}
+
+.hs-group * {
+  font-family: var(--font-roboto-family);
+  font-weight: 100;
 }
 
 .nav__list *:not(:last-child) {
@@ -83,7 +95,6 @@ html {
   position: absolute;
   top: 12px;
   left: 38px;
-  color: #fff;
   font-size: 11px;
 }
 
@@ -92,7 +103,6 @@ html {
   border-radius: 12px;
   width: 126px;
   padding-left: 20px;
-  color: #fff;
 }
 
 .search-bar:focus,
@@ -100,22 +110,10 @@ html {
   outline: none;
 }
 
-/* HEADER TITLES*/
+/* HEADER TITLES */
 .hs-group {
   width: 100%;
   text-align: center;
-}
-
-.hs-group * + * {
-  margin-top: 35px;
-}
-.hs-group * {
-  font-family: var(--font-roboto-family);
-  font-weight: 100;
-}
-
-.hs-group a {
-  color: #fff;
 }
 
 .main-title {
@@ -128,6 +126,11 @@ html {
 
 .third-title {
   font-size: calc(var(--small-font-size) + 13px);
+}
+
+.footer a {
+  color: #08c;
+  font-size: calc(var(--small-font-size) - 2px);
 }
 
 .third-title a:hover {
@@ -146,26 +149,18 @@ html {
   width: 100%;
 }
 
-/* FOOTER*/
+/* FOOTER */
 
 .footer {
-  width: 68%;
+  width: 1000px;
   margin: 0 auto;
   padding: 1em 0 2.6em;
+  font-size: calc(var(--small-font-size) - 2px);
 }
 
 .upper-footer {
   justify-content: space-between;
   align-items: center;
-}
-
-.footer a {
-  color: #0088cc;
-  font-size: calc(var(--small-font-size) - 2px);
-}
-
-.footer {
-  font-size: calc(var(--small-font-size) - 2px);
 }
 
 .footer-links {
