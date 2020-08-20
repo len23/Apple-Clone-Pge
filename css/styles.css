@@ -3,6 +3,7 @@
   --main-font-size: 16px;
   --normal-font-size: 14px;
   --small-font-size: 12px;
+  --font-roboto-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -20,13 +21,14 @@ body {
 /* HEADER */
 .header-section {
   background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg);
-  background-size: 100% 127vh;
+  background-size: 1466px 1305px;
   background-position: center bottom;
-  height: 68%;
+  height: 590px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 /* NAV BAR*/
@@ -69,20 +71,77 @@ body {
   border-right: 2px solid hsl(0, 0%, 38%);
 }
 
+.nav-item:last-child{
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  top: 12px;
+  left: 38px;
+  color: #fff;
+  font-size: 11px;
+}
+
+
 .search-bar {
   background: transparent;
   border-radius: 12px;
-  width: 106px;
+  width: 126px;
+  padding-left: 20px;
+  color: #fff;
 }
+
+.search-bar:focus, 
+.search-bar:active {
+  outline: none;
+}
+
+
 
 /* HEADER TITLES*/
 .hs-group {
   width: 100%;
   text-align: center;
-  font-size: var(--large-font-size);
-  color: #fff;
+  
 }
 
 .hs-group * + * {
-  margin-top: 4%;
+  margin-top: 35px;
+}
+.hs-group * {
+  font-family: var(--font-roboto-family);
+  font-weight: 100; 
+}
+
+.hs-group a{
+  color: #fff;
+}
+
+.main-title {
+  font-size: calc(var(--large-font-size) + 40px);
+}
+
+.second-title {
+  font-size: calc(var(--small-font-size) + 20px);
+}
+
+.third-title {
+  font-size: calc(var(--small-font-size) + 13px);
+}
+
+.third-title a:hover {
+  border-bottom: 0.5px solid #fff;
+} 
+
+.cont-pictures{
+  display: flex;
+}
+
+.pic  {
+  width:25%;
+}
+
+.pic img {
+  width: 100%;
 }
