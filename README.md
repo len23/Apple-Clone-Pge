@@ -2,7 +2,7 @@
 
 This project is based on the an arcade appel website. It was design in order to practice HTML and css. It has a basic structure, such us a navbar, a section and a footer.
 
-![website screenshots](images/screenshot.png)
+![website screenshots](images/Screenshot.png)
 
 ## :hammer: Built with:
 
