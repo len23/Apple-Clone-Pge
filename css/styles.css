@@ -69,13 +69,13 @@ html {
 
 .nav__list-btn,
 .nav-item {
-  background: linear-gradient(
-    to bottom,
-    hsl(0, 0%, 45%) 30%,
-    hsl(0, 0%, 43%) 49%,
-    hsl(0, 0%, 35%) 50%,
-    hsl(0, 0%, 45%) 90%
-  );
+  background:
+    linear-gradient(
+      hsl(0, 0%, 45%) 30%,
+      hsl(0, 0%, 43%) 49%,
+      hsl(0, 0%, 35%) 50%,
+      hsl(0, 0%, 45%) 90%
+    );
 }
 
 .nav__list-btn:first-child {
@@ -178,7 +178,7 @@ html {
 
 .upper-footer::after,
 .copyright::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
