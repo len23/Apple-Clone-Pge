@@ -158,29 +158,40 @@ html {
   font-size: calc(var(--small-font-size) - 2px);
 }
 
-.upper-footer {
-  justify-content: space-between;
-  align-items: center;
+.upper-footer::after,
+.copyright::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.apple-online,
+.footer-links,
+.copyright__info,
+.copyright .terms {
+  float: left;
 }
 
 .footer-links {
   margin: 0 0 0 50px;
   padding-top: 0;
-  align-items: center;
+}
+
+.footer-links li,
+.footer-links li:not(:last-child) a,
+.terms li {
+  display: inline-block;
+}
+
+.footer-links li {
+  vertical-align: top;
 }
 
 .footer-links li:not(:last-child) a {
-  display: inline-block;
   border-right: 1px solid hsl(0, 0%, 75%);
   padding: 0 5px;
 }
 
 .copyright {
   margin-top: 20px;
-}
-
-.copyright ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
