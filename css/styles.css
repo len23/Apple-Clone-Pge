@@ -138,11 +138,8 @@ html {
 }
 
 .cont-pictures {
-  display: flex;
-}
-
-.pic {
-  width: 25%;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .pic img {
@@ -166,13 +163,13 @@ html {
 }
 
 .apple-online,
-.footer-links,
 .copyright__info,
 .copyright .terms {
   float: left;
 }
 
 .footer-links {
+  float: right;
   margin: 0 0 0 50px;
   padding-top: 0;
 }
